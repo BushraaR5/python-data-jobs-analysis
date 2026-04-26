@@ -93,14 +93,17 @@ This project provides a **data-driven roadmap** for:
 
 ## 📊 Sample Visualizations
 
-### Skill Demand vs Salary
-![Skill Analysis](images/skill_vs_salary.png)
+### Skill Demand Analysis Across Categories
+<img width="1487" height="803" alt="image" src="https://github.com/user-attachments/assets/e03da98b-c56c-493c-a216-25bd1c289276" />
 
-### Salary Distribution by Role
-![Salary Distribution](images/salary_distribution.png)
 
-### Remote vs Salary Trend
-![Remote Trend](images/remote_salary.png)
+### Salary Variation Across Data Roles
+<img width="992" height="768" alt="image" src="https://github.com/user-attachments/assets/dabf1e42-3075-4945-9a22-64715843952c" />
+
+
+### On Site vs Remote Job Distribution Gap
+<img width="1302" height="735" alt="image" src="https://github.com/user-attachments/assets/44a46c21-a41b-4e20-ba60-7c2d47105ab9" />
+
 
 ## ▶️ How to Run
 

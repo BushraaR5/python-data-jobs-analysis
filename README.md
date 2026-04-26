@@ -1,8 +1,10 @@
 # 📊 Python Data Jobs Analysis
 
+🚀 End-to-end data analysis project exploring job market trends, skills demand, and salary insights in the data industry.
+
 ## 📌 Project Overview
 
-Using real-world job data, this analysis explores:
+This project performs an end-to-end analysis of real-world data job postings to uncover:
 
 - 🛠️ In-demand skills across roles  
 - 👤 Role-based skill requirements  
@@ -15,27 +17,29 @@ The goal is to help aspiring data professionals understand the current job marke
 
 ## 📊 Dataset
 
-This project uses the **Data Jobs Dataset** by Luke Barousse.
+This project uses the **Data Jobs Dataset** created by Luke Barousse.
 
-* 📌 Source: https://huggingface.co/datasets/lukebarousse/data_jobs
+- Source: https://huggingface.co/datasets/lukebarousse/data_jobs
 
-### ⚠️ Note on Data Availability
+This dataset contains real-world data analytics job postings collected from multiple sources using automated scraping methods. :contentReference[oaicite:0]{index=0}
 
-Due to file size limitations, the full dataset is **not included** in this repository.
+### ⚠️ Data Availability Note
 
-* A **sample dataset** is provided:
-  `data/raw/data_jobs_sample.csv`
+The full dataset (~230MB+) is not included in this repository due to size limitations.
 
-* The notebooks and scripts are designed to:
+Instead:
+- A **sample dataset** is provided for demonstration
+- All notebooks and scripts are designed to:
+  - Use the full dataset if available
+  - Automatically fall back to the sample dataset
 
-  * Use the full dataset if available
-  * Automatically fall back to the sample dataset otherwise
+This ensures the project runs smoothly for anyone cloning the repository.
 
 ---
 
-## 📥 How to Load Full Dataset
+## 📥 Load Full Dataset
 
-You can load the full dataset using:
+To reproduce full results, load the dataset using:
 
 ```python
 import pandas as pd
@@ -43,9 +47,8 @@ from datasets import load_dataset
 
 dataset = load_dataset('lukebarousse/data_jobs')
 df = dataset['train'].to_pandas()
-```
 
----
+```
 
 ## 📁 Folder Structure
 
@@ -71,7 +74,7 @@ python-data-jobs-analysis/
 └── README.md
 ```
 
-## 📂 Project Structure
+## 🔍 Analysis Breakdown
 
 The analysis is divided into four key components:
 
@@ -146,6 +149,16 @@ This project provides a **data-driven roadmap** for:
 
 ---
 
+## 💡 What This Project Demonstrates
+
+- End-to-end data analysis workflow
+- Data cleaning and preprocessing of real-world datasets
+- Exploratory data analysis (EDA)
+- Feature engineering (skills extraction, salary mapping)
+- Business insight generation from data
+
+---
+
 ## 🛠 Tools & Technologies
 
 - Python (Pandas, NumPy)
@@ -184,5 +197,11 @@ https://huggingface.co/datasets/lukebarousse/data_jobs
 ---
 
 ## 📬 Contact
+
+- GitHub: https://github.com/BushraaR5  
+- LinkedIn: (to be updated) 
+- Upwork: (to be updated)
+
+Feel free to reach out for data analysis or Power BI projects.
 
 If you found this project useful or have feedback, feel free to connect!

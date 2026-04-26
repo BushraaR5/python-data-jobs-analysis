@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Large / raw data
+data/raw/data_jobs.csv
+
+# Processed large files
+data/processed/*.csv
+data/processed/*.parquet
+data/processed/*.pkl
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment
+.env

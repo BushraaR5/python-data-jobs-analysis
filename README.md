@@ -1,23 +1,75 @@
-# 📊 Data Job Market Analysis: Skills, Salaries & Hiring Trends
+# 📊 Python Data Jobs Analysis
 
-## 🔍 Overview
-
-This project analyzes the global data job market to answer one key question:
-
-👉 *What skills should you learn to maximize job opportunities and salary in data careers?*
+## 📌 Project Overview
 
 Using real-world job data, this analysis explores:
 
 - 🛠️ In-demand skills across roles  
 - 👤 Role-based skill requirements  
 - 💰 Salary trends and growth  
-- 🌍 Job market structure (remote work, platforms, hiring patterns)  
+- 🌍 Job market structure (remote work, platforms, hiring patterns) 
+
+The goal is to help aspiring data professionals understand the current job market and make informed career decisions.
 
 ---
 
-📌 **Key Insight:**  
-The data job market is not just about learning tools —  
-it’s about choosing the *right combination of skills, roles, and platforms*.
+## 📊 Dataset
+
+This project uses the **Data Jobs Dataset** by Luke Barousse.
+
+* 📌 Source: https://huggingface.co/datasets/lukebarousse/data_jobs
+
+### ⚠️ Note on Data Availability
+
+Due to file size limitations, the full dataset is **not included** in this repository.
+
+* A **sample dataset** is provided:
+  `data/raw/data_jobs_sample.csv`
+
+* The notebooks and scripts are designed to:
+
+  * Use the full dataset if available
+  * Automatically fall back to the sample dataset otherwise
+
+---
+
+## 📥 How to Load Full Dataset
+
+You can load the full dataset using:
+
+```python
+import pandas as pd
+from datasets import load_dataset
+
+dataset = load_dataset('lukebarousse/data_jobs')
+df = dataset['train'].to_pandas()
+```
+
+---
+
+## 📁 Folder Structure
+
+```
+python-data-jobs-analysis/
+│
+├── data/
+│   ├── raw/
+│   │   └── data_jobs_sample.csv
+│   └── processed/
+│
+├── notebooks/
+│   ├── 1.data_cleaning.ipynb
+│   ├── 2.skills_analysis.ipynb
+│   ├── 3.role_analysis.ipynb
+│   ├── 4.salary_analysis.ipynb
+│   └── 5.job_market_analysis.ipynb
+│
+├── src/
+│   ├── data_cleaning.py
+│   └── skills_processing.py
+│
+└── README.md
+```
 
 ## 📂 Project Structure
 
@@ -43,17 +95,21 @@ The analysis is divided into four key components:
 - Analyzes job platforms and remote trends
 - Tracks demand over time
 
-## 📈 Key Insights
+📌 **Key Insights** 
 
 ### 🛠️ Skills
 - Python and SQL dominate the market (~19% each)
 - Cloud skills (AWS, Azure) significantly increase salary potential
 - Specialized tools (Spark, Kafka) are niche but high-paying
 
+<img width="1487" height="803" alt="image" src="https://github.com/user-attachments/assets/e03da98b-c56c-493c-a216-25bd1c289276" />
+
 ### 👤 Roles
 - Data Scientists earn the highest salaries (~$155K senior level)
 - Data Engineers offer strong demand + salary balance
 - Data Analysts have highest job volume but lower pay
+
+<img width="1482" height="648" alt="image" src="https://github.com/user-attachments/assets/a9e244b5-20c9-451f-a699-116eb77c81ae" />
 
 ### 💰 Salary
 - High-paying roles are strongly linked to:
@@ -61,10 +117,14 @@ The analysis is divided into four key components:
   - Big data tools
 - Remote roles offer higher average salaries (~10–15% more)
 
+<img width="1488" height="755" alt="image" src="https://github.com/user-attachments/assets/db5fac61-4c1c-43b7-919c-6ab45129ff7a" />
+
 ### 🌐 Job Market
 - ~90% of roles are full-time
 - LinkedIn dominates job postings
 - Remote work is increasing, especially in higher-paying roles
+
+<img width="1127" height="780" alt="image" src="https://github.com/user-attachments/assets/f54b444a-1e78-46fb-b19b-993e50806ce3" />
 
 ## 🎯 Why This Project Matters
 
@@ -84,34 +144,28 @@ This project provides a **data-driven roadmap** for:
 - Understanding talent demand
 - Identifying high-value skill gaps
 
-## ⚙️ Tools & Technologies
+---
+
+## 🛠 Tools & Technologies
 
 - Python (Pandas, NumPy)
 - Data Visualization (Matplotlib, Seaborn)
 - Jupyter Notebook
 - Data Cleaning & Transformation
 
-## 📊 Sample Visualizations
-
-### Skill Demand Analysis Across Categories
-<img width="1487" height="803" alt="image" src="https://github.com/user-attachments/assets/e03da98b-c56c-493c-a216-25bd1c289276" />
-
-
-### Salary Variation Across Data Roles
-<img width="992" height="768" alt="image" src="https://github.com/user-attachments/assets/dabf1e42-3075-4945-9a22-64715843952c" />
-
-
-### On Site vs Remote Job Distribution Gap
-<img width="1302" height="735" alt="image" src="https://github.com/user-attachments/assets/44a46c21-a41b-4e20-ba60-7c2d47105ab9" />
-
+---
 
 ## ▶️ How to Run
 
 1. Clone the repository
 2. Install dependencies:
-   pip install -r requirements.txt
-3. Open notebooks in Jupyter
-4. Run cells to reproduce analysis
+
+   ```
+   pip install pandas matplotlib seaborn datasets
+   ```
+3. Run the notebooks in order
+
+---
 
 ## 📌 Conclusion
 
@@ -120,4 +174,15 @@ The data job market rewards:
 - Strategic specialization (Cloud, Big Data)
 - Smart role selection
 
-This project transforms raw job data into **actionable career insights**.
+---
+
+## 🙌 Acknowledgment
+
+Dataset provided by **Luke Barousse**
+https://huggingface.co/datasets/lukebarousse/data_jobs
+
+---
+
+## 📬 Contact
+
+If you found this project useful or have feedback, feel free to connect!
